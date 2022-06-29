@@ -1,0 +1,113 @@
+.cep-search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 10px;
+  align-items: flex-start;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+}
+
+.cep-container-top {
+  margin-top: 54px;
+  padding: 30px;
+  background-color: #e6f7ff;
+}
+
+.search-container h1 {
+  font-size: 1.5em;
+  color: #262626;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.search-input {
+  background-color: #ffffff;
+  border: 1px solid #8c8c8c;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  height: 40px;
+  width: 215px;
+  margin-bottom: 25px;
+}
+
+.search-input::placeholder {
+  color: #d3cccc;
+}
+
+.search-button {
+  height: 40px;
+  width: 160px;
+  color: #ffffff;
+}
+
+.cep-card-result-content {
+  background-color: #f5f5f5;
+  margin-top: 54px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cep-card-img {
+  width: 280px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cep-card-result {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.cep-card-result h5 {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #1890ff;
+}
+
+.cep-card-img img {
+  border-radius: 10px;
+  width: 280px;
+  height: auto;
+}
+
+@media (min-width: 576px) {
+  .cep-card-result-content {
+    width: auto;
+  }
+  .search-input {
+    width: 350px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cep-card-result {
+    width: auto;
+    height: auto;
+    margin-bottom: 0px;
+  }
+  .cep-card-result-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .cep-card-img img {
+    width: 250px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cep-card-result {
+    width: auto;
+  }
+}
